@@ -2,7 +2,6 @@ package DemoBackend.demo.service;
 
 import DemoBackend.demo.model.Product;
 
-
 import java.util.List;
 
 
@@ -12,13 +11,9 @@ public interface ProductService {
 
     Product getProductById(Integer id);
 
-    Product addProduct(Product product);
-
+    void addProduct(Product product);
 
     Product updateProduct(Product product);
 
     void deleteProduct(Integer id);
-
-
-
 }

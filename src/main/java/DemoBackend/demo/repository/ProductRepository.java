@@ -7,11 +7,14 @@ import org.springframework.stereotype.Repository;
 import java.util.List;
 import java.util.Optional;
 
+
 @Repository
 public interface ProductRepository extends JpaRepository<Product, Integer> {
 
-    List<Product> findAllProducts();
-    Optional<Product> findProductById();
-    Optional<Product> findProductByIdAndName();
+    List<Product> findAll();
+
+    Optional<Product> findById(Integer integer);
+
+    Optional<Product>findProductByIdAndName(Integer id, String name);
 
 }
